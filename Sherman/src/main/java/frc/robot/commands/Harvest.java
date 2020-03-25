@@ -19,6 +19,7 @@ public class Harvest extends CommandBase {
 
   @Override
   public void execute() {
+    m_Harvester.setPercentControl(HarvesterConstants.HARVEST_PERCENT);
   }
 
   @Override

@@ -9,4 +9,6 @@ public class HarvesterConstants {
     public static int RIGHT_PISTON_ID_2 = 4;
 
     public static double HARVEST_PERCENT = -.75;
+    public static double SOW_PERCENT = .25;
 }
+                                        

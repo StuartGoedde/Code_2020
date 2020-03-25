@@ -32,7 +32,7 @@ public class ManualConveyor extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_Conveyor.setPercentControl(supplier.getAsDouble());
+    m_Conveyor.setPercentControl(-supplier.getAsDouble() * 0.5);
   }
 
   // Called once the command ends or is interrupted.

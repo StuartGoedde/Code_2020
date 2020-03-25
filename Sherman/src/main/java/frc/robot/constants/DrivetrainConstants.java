@@ -30,6 +30,7 @@ public class DrivetrainConstants {
     public static final double MAX_LINEAR_SPEED = 4;
     public static final double MAX_LINEAR_ACCEL = 1;
     public static final double MAX_ROT_SPEED = 2.0 * Math.PI;
+    public static final double OPEN_LOOP_RAMP_RATE = 0.5;
 
     // PID values for DriveToSetpointPID
     public static final double DRIVETOSETPOINT_ANGLE_P = 0.0;

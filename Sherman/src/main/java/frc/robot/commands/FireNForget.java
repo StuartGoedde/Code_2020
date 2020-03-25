@@ -5,9 +5,9 @@ import edu.wpi.first.wpilibj2.command.ParallelCommandGroup;
 import edu.wpi.first.wpilibj2.command.ParallelRaceGroup;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 
-public class Shoot extends SequentialCommandGroup {
+public class FireNForget extends SequentialCommandGroup {
 
-  public Shoot() {
+  public FireNForget() {
     super(
     //   new ParallelRaceGroup(
     //     // new LockOn(),

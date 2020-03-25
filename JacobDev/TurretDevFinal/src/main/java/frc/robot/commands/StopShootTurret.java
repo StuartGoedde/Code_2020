@@ -7,7 +7,7 @@
 
 package frc.robot.commands;
 
-import frc.robot.Constants;
+import frc.robot.constants.TurrentConstants;
 import frc.robot.subsystems.Turret;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;

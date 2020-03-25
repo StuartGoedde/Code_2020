@@ -1,7 +1,7 @@
 
 package frc.robot.commands;
 
-import frc.robot.Constants;
+import frc.robot.constants.TurrentConstants;
 import frc.robot.subsystems.Turret;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -52,9 +52,5 @@ public class OscillateTurret extends CommandBase {
   @Override
   public boolean isFinished() {
     return finished;
-  }
-    
-  public void setFinished(boolean finished) {
-    this.finished = finished;
   }
 }

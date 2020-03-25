@@ -7,7 +7,7 @@
 
 package frc.robot.commands;
 
-import frc.robot.Constants;
+import frc.robot.constants.TurrentConstants;
 import frc.robot.subsystems.Turret;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
@@ -34,8 +34,8 @@ public class ShootTurret extends CommandBase {
   // Called repeatedly when this Command is scheduled to run
   @Override
   public void execute() {
-    turret.setBoosterOutput(Constants.TURRET_MAX_BOOSTER_OUTPUT);
-    turret.setFlywheelOutput(Constants.TURRET_MAX_FLYWHEEL_OUTPUT);
+    turret.setBoosterOutput(TurrentConstants.TURRET_MAX_BOOSTER_OUTPUT);
+    turret.setFlywheelOutput(TurrentConstants.TURRET_MAX_FLYWHEEL_OUTPUT);
   }
 
   // Make this return true when this Command no longer needs to run execute()

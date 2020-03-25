@@ -70,17 +70,24 @@ public class Drivetrain extends SubsystemBase {
     gyro.reset();
     odometry = new DifferentialDriveOdometry(getAngle());
     rightMaster.setInverted(true);
-    rightShifter.set(Value.kReverse);
-    leftShifter.set(Value.kReverse);
+    //rightShifter.set(Value.kReverse);
+    //leftShifter.set(Value.kReverse);
+    rightShifter.set(Value.kForward);
+    leftShifter.set(Value.kForward);
     rightFollower.follow(rightFollower);
     leftFollower.follow(leftMaster);
+    rightMaster.configOpenloopRamp(DrivetrainConstants.OPEN_LOOP_RAMP_RATE);
+    rightFollower.configOpenloopRamp(DrivetrainConstants.OPEN_LOOP_RAMP_RATE);
+    leftMaster.configOpenloopRamp(DrivetrainConstants.OPEN_LOOP_RAMP_RATE);
+    leftFollower.configOpenloopRamp(DrivetrainConstants.OPEN_LOOP_RAMP_RATE);
   }
 
   @Override
   public void periodic() {
     updateOdometry();
     printOdometry();
-  }
+    getInHighGear();
+  } //Comenttttt
 
   public static Drivetrain getInstance() {
     return instance;
@@ -191,6 +198,7 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public boolean getInHighGear() {
+    SmartDashboard.putBoolean("Gear", !inHighGear);
     return inHighGear;
   }
 

@@ -27,6 +27,10 @@ public class Robot extends TimedRobot {
   // public ourpid controller0 = new ourpid(); 
   // public ourpid controller2 = new ourpid(); 
 
+  // //Creates the controllers in ourpid class
+  // public ourpid controller1 = new ourpid();
+  // public ourpid controller0 = new ourpid(); 
+  // public ourpid controller2 = new ourpid(); 
   /*
   Button 2 - Enable
   Trigger - Cycle Ids
